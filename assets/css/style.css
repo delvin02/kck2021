@@ -490,7 +490,7 @@ hr {
     top: 0;
     width: 101%;
     height: 101%;
-    background: #ff5f13;
+    background: #c0762b;
     z-index: 1;
     transition: transform 0.5s;
     transition-timing-function: ease;
@@ -536,6 +536,7 @@ hr {
 }
 
 #scrollUp {
+
     background: #c0762b;
     height: 50px;
     width: 50px;
@@ -2285,7 +2286,7 @@ hr {
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .section-tittle.section-tittle2 .front-text h2 {
-        font-size: 40px
+        font-size: 50px
     }
 }
 
@@ -2374,7 +2375,7 @@ hr {
 
 @media (max-width: 575px) {
     .section-tittle.section-tittle4 .front-text h2 {
-        font-size: 35px
+        font-size: 45px
     }
 }
 
@@ -2495,7 +2496,7 @@ hr {
 }
 
 .theme-color {
-    color: #ff5f13
+    color: #c0762b;
 }
 
 .header-area .header-top {
@@ -2617,7 +2618,7 @@ hr {
 }
 
 .header-area .header-top .header-info-right .header-social li a:hover {
-    color: #ff5f13
+    color: #c0762b;
 }
 
 .main-header {
@@ -2658,7 +2659,7 @@ hr {
 }
 
 .main-header .main-menu ul li:hover>a {
-    color: #ff5f13
+    color: #c0762b;
 }
 
 .main-header .main-menu ul ul.submenu {
@@ -2671,7 +2672,7 @@ hr {
     opacity: 0;
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
     padding: 17px 0;
-    border-top: 5px solid #ff5f13;
+    border-top: 5px solid #c0762b;
     -webkit-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
     -ms-transition: all .3s ease-out 0s;
@@ -2691,12 +2692,15 @@ hr {
 }
 
 .main-header .main-menu ul ul.submenu>li>a:hover {
-    color: #ff5f13;
+    color: #c0762b;
     background: none
 }
 
 .main-header .logo .small-logo {
     display: none
+}
+.main-header .logo .big-logo {
+    display: none;
 }
 
 @media (max-width: 575px) {
@@ -2765,7 +2769,7 @@ hr {
 }
 
 .slicknav_menu .slicknav_icon-bar {
-    background-color: #ff5f13 !important
+    background-color: #c0762b !important
 }
 
 .slicknav_nav {
@@ -2773,12 +2777,12 @@ hr {
 }
 
 .header-area .slicknav_btn {
-    top: -45px
+    top: -33px;
 }
 
 .slicknav_menu .slicknav_nav a:hover {
     background: transparent;
-    color: #ff5f13
+    color: #c0762b;
 }
 
 .slicknav_menu {
@@ -2795,9 +2799,10 @@ hr {
 
 .slider-height {
     min-height: 900px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover
+    background-size: cover;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2820,7 +2825,7 @@ hr {
 
 @media (max-width: 575px) {
     .slider-height {
-        min-height: 400px
+        min-height: 100%;
     }
 }
 
@@ -7267,10 +7272,6 @@ del {
     color: #c0762b;
 }
 
-.logo {
-    display: none
-}
-
 /* Qualities */
 .ftco-section {
     padding-top: 7em 0;
@@ -7282,7 +7283,7 @@ del {
 }
 @media (max-width: 767.98px) {
     .ftco-section {
-        padding: 6em 0;
+        padding: 2em 0 1em 0 ;
     }
 }
 
@@ -7542,21 +7543,13 @@ del {
     display: block;
     z-index: 2;
 }
-@media (max-width: 991.98px) {
-    .ftco-counter .block-18 {
-      margin-bottom: 2em;
-    }
-  }
+
 
 .ftco-counter .text {
     position: relative;
 }
-@media (max-width: 767.98px) {
-  .ftco-counter .text {
-    width: 100%;
-  }
-}
-.ftco-counter .text .number {
+
+.ftco-counter .text .count-number .number {
     line-height: 1;
     font-weight: 700;
     font-size: 50px;
@@ -7566,12 +7559,7 @@ del {
     padding-left: 1em;
   }
   
-  @media (max-width: 767.98px) {
-    .ftco-counter .text-2 {
-      width: 100%;
-    }
-  }
-  
+
   .ftco-counter .text-2 span {
     font-size: 18px;
     font-weight: 800;
@@ -7582,11 +7570,6 @@ del {
     color: rgba(0, 0, 0, 0.8);
   }
   
-  @media (max-width: 767.98px) {
-    .ftco-counter .counter-wrap {
-      margin-bottom: 20px;
-    }
-  }
 .contact-us-h2 {
   color: white;
   -webkit-text-stroke: 1px #F8F8F8;
@@ -7597,5 +7580,6 @@ del {
     padding: 30px
 }
 .count-wrapper {
-    background: radial-gradient(circle, rgba(201,118,43,1) 26%, rgba(25,26,51,1) 76%);
+    background-image: linear-gradient(to right, #c2b280, #c0a86e, #bf9e5d, #bf934d, #bf873e, #b77e3a, #ae7536, #a66c32, #936436, #805d3a, #6d553e, #5a4d41);
 }
+  
